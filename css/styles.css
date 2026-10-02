@@ -426,9 +426,8 @@ p {
 
 .social-split {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 1rem;
-  align-items: start;
 }
 
 .social-col {
@@ -491,6 +490,23 @@ p {
   display: grid;
   grid-template-columns: 0.9fr 1.1fr;
   gap: 1.2rem;
+  min-width: 0;
+}
+
+.contact-item {
+  display: flex;
+  gap: 0.65rem;
+  margin-bottom: 0.7rem;
+  min-width: 0;
+}
+
+.contact-item div {
+  min-width: 0;
+}
+
+.contact-item p,
+.contact-item a {
+  overflow-wrap: anywhere;
 }
 
 .contact-item {
@@ -513,6 +529,8 @@ p {
   padding: 1.1rem;
   border-radius: var(--radius);
   box-shadow: var(--neu-raised);
+  min-width: 0;
+  max-width: 100%;
 }
 
 label {
@@ -528,14 +546,26 @@ input,
 textarea,
 select {
   width: 100%;
+  max-width: 100%;
+  min-width: 0;
   border: 0;
   background: var(--bg-raised);
   color: var(--text);
   font: inherit;
-  padding: 0.65rem 0.8rem;
+  padding: 0.75rem 0.85rem;
   border-radius: 10px;
   box-shadow: var(--neu-pressed);
   outline: none;
+}
+
+select {
+  appearance: none;
+  background-image: linear-gradient(45deg, transparent 50%, var(--gold) 50%),
+    linear-gradient(135deg, var(--gold) 50%, transparent 50%);
+  background-position: calc(100% - 16px) 50%, calc(100% - 10px) 50%;
+  background-size: 6px 6px, 6px 6px;
+  background-repeat: no-repeat;
+  padding-right: 2rem;
 }
 
 textarea {
@@ -696,9 +726,13 @@ textarea {
   border-radius: 8px;
 }
 
-.feed-card p {
-  margin: 0.25rem 0 0;
-  font-size: 0.86rem;
+.feed-card strong {
+  display: block;
+}
+
+.feed-card .tiny {
+  display: block;
+  margin: 0.15rem 0 0.3rem;
 }
 
 .ig-card {
@@ -906,12 +940,16 @@ textarea {
 
 @media (max-width: 900px) {
   .hero,
-  .contact-grid,
   .cards,
-  .social-split,
-  .ig-grid,
   .gallery-grid {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .contact-grid,
+  .form-row,
+  .social-split,
+  .ig-grid {
+    grid-template-columns: 1fr;
   }
 
   .hero-media img {
@@ -953,11 +991,8 @@ textarea {
 
 @media (max-width: 640px) {
   .hero,
-  .form-row,
   .hero-stats,
   .cards,
-  .social-split,
-  .ig-grid,
   .gallery-grid,
   .feed-card {
     grid-template-columns: 1fr;
@@ -966,5 +1001,9 @@ textarea {
   .feed-card img {
     width: 100%;
     height: 140px;
+  }
+
+  .form {
+    padding: 1rem;
   }
 }
