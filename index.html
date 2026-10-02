@@ -54,7 +54,10 @@
           <div class="hero-stats">
             <div class="stat"><strong>24/7</strong><span>Qendra e kontrollit</span></div>
             <div class="stat"><strong>12+</strong><span>Vite në terren</span></div>
-            <div class="stat"><strong>SQ / EN</strong><span>Ekipe dygjuhëshe</span></div>
+            <div class="stat">
+              <strong><i data-lucide="languages" aria-hidden="true"></i></strong>
+              <span>Ekipe dygjuhëshe</span>
+            </div>
           </div>
         </div>
         <div class="hero-media">
@@ -66,6 +69,16 @@
         </div>
       </section>
 
+      <section class="section" id="highlights">
+        <div class="container">
+          <div class="section-head">
+            <p class="eyebrow">Instagram</p>
+            <h2>Stories dhe highlights</h2>
+          </div>
+          <div class="stories-row" id="stories-row"></div>
+        </div>
+      </section>
+
       <section class="section" id="sherbimet">
         <div class="container">
           <div class="section-head">
@@ -73,32 +86,32 @@
             <h2>Shërbime sipas objektit, jo sipas shabllonit</h2>
           </div>
           <div class="cards">
-            <article class="card">
+            <article class="card" data-post="patrol">
               <div class="icon-wrap"><i data-lucide="shield"></i></div>
               <h3>Patrullë statike dhe mobile</h3>
               <p>Porta, depo dhe patrulla me automjet, me pika kontrolli dhe ditar incidentesh.</p>
             </article>
-            <article class="card">
+            <article class="card" data-post="event">
               <div class="icon-wrap"><i data-lucide="calendar-days"></i></div>
               <h3>Siguri ngjarjesh</h3>
               <p>Hyrje, kontrolle çantash dhe stevardim për koncerte, konferenca dhe festa private.</p>
             </article>
-            <article class="card">
+            <article class="card" data-post="retail">
               <div class="icon-wrap"><i data-lucide="building-2"></i></div>
               <h3>Retail dhe korporata</h3>
               <p>Prani në dyqan, kontroll i rampeve dhe mbyllje pas orarit për zyra, qendra tregtare dhe banka.</p>
             </article>
-            <article class="card">
+            <article class="card" data-post="home">
               <div class="icon-wrap"><i data-lucide="house"></i></div>
               <h3>Banesa</h3>
               <p>Porta kompleksi, libër vizitorësh dhe mbulim natën për pallate dhe lagje të mbyllura.</p>
             </article>
-            <article class="card">
+            <article class="card" data-post="vip">
               <div class="icon-wrap"><i data-lucide="user-round"></i></div>
               <h3>Mbrojtje VIP</h3>
               <p>Përgatitje paraprake, shoqërim diskret dhe kontroll vendi për figura publike dhe ekzekutivë.</p>
             </article>
-            <article class="card">
+            <article class="card" data-post="cctv">
               <div class="icon-wrap"><i data-lucide="cctv"></i></div>
               <h3>Monitorim CCTV</h3>
               <p>Vëzhgim nga distanca, përgjigje alarmeve dhe dërgim i koordinuar me rojet në terren.</p>
@@ -220,6 +233,7 @@
     </footer>
 
     <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="js/content.js"></script>
     <script src="js/social.js"></script>
     <script src="js/main.js"></script>
   </body>
