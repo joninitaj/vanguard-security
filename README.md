@@ -1,6 +1,6 @@
 # Vanguard Security
 
-Static marketing site for **Vanguard Security**, a Kosovo-based protection company (Prishtina). Dark-gold neumorphic layout, official shield logo, services, demo past jobs, and social embeds.
+Faqe statike e **Vanguard Security** (Prishtinë). Shqip, stemë PNG me sfond transparent, ballinë e shkurtër, galeri ngjarjesh, Facebook dhe Instagram të ndara.
 
 Live site: https://joninitaj.github.io/vanguard-security/
 

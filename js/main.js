@@ -24,14 +24,14 @@
       const email = String(data.get("email") || "").trim();
       const message = String(data.get("message") || "").trim();
       if (!name || !email || !message) {
-        status.textContent = "Please complete name, email, and message.";
+        status.textContent = "Plotësoni emrin, emailin dhe mesazhin.";
         return;
       }
-      const subject = encodeURIComponent("Quote request — Vanguard Security");
+      const subject = encodeURIComponent("Kërkesë për ofertë — Vanguard Security");
       const body = encodeURIComponent(
-        `Name: ${name}\nEmail: ${email}\nPhone: ${data.get("phone") || ""}\nService: ${data.get("service") || ""}\n\n${message}`
+        `Emri: ${name}\nEmail: ${email}\nTelefoni: ${data.get("phone") || ""}\nShërbimi: ${data.get("service") || ""}\n\n${message}`
       );
-      status.textContent = "Opening your email client…";
+      status.textContent = "Po hapet programi i emailit…";
       window.location.href = `mailto:info@vanguardsecurity-ks.com?subject=${subject}&body=${body}`;
     });
   }

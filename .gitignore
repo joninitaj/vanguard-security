@@ -3,4 +3,5 @@ Thumbs.db
 *.log
 .env
 .env.*
+assets/logo-source.png
 node_modules/
