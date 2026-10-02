@@ -2,7 +2,9 @@
 
 Static marketing site for **Vanguard Security**, a Kosovo-based protection company (Prishtina). Dark-gold neumorphic layout, official shield logo, services, demo past jobs, and social embeds.
 
-Live GitHub Pages URL (after publish): `https://<your-username>.github.io/vanguard-security/`
+Live site: https://joninitaj.github.io/vanguard-security/
+
+Repository: https://github.com/joninitaj/vanguard-security
 
 ## Social feeds
 
