@@ -99,6 +99,7 @@ p {
 
 .section {
   padding: 5.5rem 0;
+  scroll-margin-top: calc(var(--nav-h) + 8px);
 }
 
 .section-head {
@@ -431,6 +432,12 @@ p {
   padding: 1rem;
   box-shadow: var(--neu-raised);
   min-height: 280px;
+}
+
+.social-frame iframe {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
 }
 
 .ig-grid {
